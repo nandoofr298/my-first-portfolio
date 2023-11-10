@@ -1,6 +1,136 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700");
 
-.logo__authentication {
-  margin-left: 48px;
-  margin-top: 36px;
+.container_css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1140px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__hero {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.home__featured {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1140px;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+
+.home__featured__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home__featured__card1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  gap: 10px;
+}
+.home__featured__card2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  gap: 10px;
+}
+.home__featured__card3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  gap: 10px;
+}
+.home__featured__card4 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  gap: 10px;
+}
+
+.home__quote {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 1140px;
+  background-color: #efefef;
+}
+
+.home__offer {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1140px;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.home__offer__up {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.home__offer__up1 {
+  background-color: #efefef;
+}
+.home__offer__up2 {
+  background-color: #efefef;
+}
+.home__offer__up3 {
+  background-color: #efefef;
+}
+.home__offer__down {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 30px;
+}
+.home__offer__down1 {
+  background-color: #efefef;
+}
+.home__offer__down2 {
+  background-color: #efefef;
+}
+.home__offer__down3 {
+  background-color: #efefef;
+}
+.footer {
+  background-color: #037de8;
+}
+
+.footer__up {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 1140px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+.footer__down {
+  display: flex;
+  width: 1140px;
+  flex-direction: row;
+  justify-content: space-between;
 }
