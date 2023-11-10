@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container_css">
+      <div class="navigation">
+        <div class="navigation__left">
+          <img src="assets/img/brandname.png" alt="" height="50px" />
+        </div>
+        <div class="navigation__right">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TRACKER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="home__hero">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/slides/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slides/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slides/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Collage Education</h1>
+                <p>Awesome Template get it know</p>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Pricing
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Pricing
+                        </h1>
+                      </div>
+                      <div class="modal-body"><p>test</p></div>
+                      <div class="modal-footer"><p>test</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home__featured">
+        <h1>Our Featured Courses</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="home__featured__card">
+          <div class="home__featured__card1">
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__featured__card2">
+            <h3>UI Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__featured__card3">
+            <h3>Interaction</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__featured__card4">
+            <h3>User Experience</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="home__quote">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <h5 style="font-style: italic">- Jaison Warner -</h5>
+            </div>
+            <div class="carousel-item">
+              <h1>test</h1>
+            </div>
+            <div class="carousel-item">
+              <h1>test</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home__offer">
+        <h2>Courses We Offer</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="home__offer__up">
+          <div class="home__offer__up1">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__offer__up2">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__offer__up3">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="home__offer__down">
+          <div class="home__offer__down1">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__offer__down2">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="home__offer__down3">
+            <h3>Heading Course</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__up">
+          <div class="footer__up1">
+            <li>Our Contact</li>
+            <li>brandname</li>
+            <li>PCP tower</li>
+            <li>Pin-21542 Indonesia ID</li>
+            <li>(123) 456-789-1255-12548</li>
+            <li>email@domainnama.com</li>
+          </div>
+          <div class="footer__up2">
+            <li>Quick Links</li>
+            <li>Latest Events</li>
+            <li>Terms and conditions</li>
+            <li>Privacy policy</li>
+            <li>Carrer</li>
+            <li>Contac me</li>
+          </div>
+          <div class="footer__up3">
+            <li>Latest posts</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+          </div>
+          <div class="footer__up4">
+            <li>Recent news</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+          </div>
+        </div>
+        <div class="footer__down">
+          <p>@brandname Site All right reserved. Template by example</p>
+          <p>test</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<style>
+  .container_css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home__hero {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .home__featured {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1140px;
+    gap: 25px;
+  }
+
+  .home__featured__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .home__featured__card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    gap: 10px;
+  }
+  .home__featured__card2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    gap: 10px;
+  }
+  .home__featured__card3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    gap: 10px;
+  }
+  .home__featured__card4 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    gap: 10px;
+  }
+
+  .home__quote {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 1140px;
+    background-color: #efefef;
+  }
+
+  .home__offer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1140px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .home__offer__up {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 30px;
+    padding-bottom: 10px;
+  }
+  .home__offer__up1 {
+    background-color: #efefef;
+  }
+  .home__offer__up2 {
+    background-color: #efefef;
+  }
+  .home__offer__up3 {
+    background-color: #efefef;
+  }
+  .home__offer__down {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 30px;
+  }
+  .home__offer__down1 {
+    background-color: #efefef;
+  }
+  .home__offer__down2 {
+    background-color: #efefef;
+  }
+  .home__offer__down3 {
+    background-color: #efefef;
+  }
+  .footer {
+    background-color: #037de8;
+  }
+
+  .footer__up {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 1140px;
+    padding-bottom: 100px;
+  }
+  .footer__down {
+    display: flex;
+    width: 1140px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+</style>

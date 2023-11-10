@@ -1,0 +1,63 @@
+.container {
+  &__authentication {
+    .login {
+      display: flex;
+      flex-direction: row;
+      &__left {
+        width: 50%;
+      }
+      &__right {
+        width: 50%;
+
+        .logo {
+          width: 100%;
+          height: 100px;
+        }
+        .container__card {
+          .card {
+            width: 320px;
+            height: 408px;
+
+            margin: 112px auto 200px auto;
+
+            &__title {
+              display: flex;
+              flex-direction: column;
+
+              h1 {
+                color: var(--neutral-100, #0a0a0a);
+                font-family: Inter;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px;
+                letter-spacing: -0.588px;
+              }
+              h2 {
+                color: var(--neutral-60, #9e9e9e);
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: -0.176px;
+              }
+            }
+
+            &__inputs {
+            }
+
+            &__buttons {
+            }
+          }
+        }
+      }
+    }
+    .register {
+      &__left {
+      }
+      &__right {
+      }
+    }
+  }
+}
