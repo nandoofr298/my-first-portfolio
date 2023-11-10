@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="container_css">
+      <div class="navigation">
+        <div class="navigation__left">
+          <img src="assets/img/brandname.png" alt="" height="50px" />
+        </div>
+        <div class="navigation__right">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tracker.html">TRACKER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-us__title"><h2 class="text-white">Contact Us</h2></div>
+      <div class="mapouter">
+        <div class="gmap_canvas" style="padding-top: 40px">
+          <div class="mapouter">
+            <iframe
+              src="https://maps.google.com/maps?q=pertamina&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              frameborder="0"
+              scrolling="no"
+              style="width: 1080px; height: 600px"
+            ></iframe
+            ><style>
+              .mapouter {
+                position: relative;
+                height: 600px;
+                width: 1080px;
+                background: #fff;
+              }
+              .maprouter a {
+                color: #fff !important;
+                position: absolute !important;
+                top: 0 !important;
+                z-index: 0 !important;
+              }</style
+            ><a href="https://blooketjoin.org">blooket join</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                height: 600px;
+                width: 1080px;
+              }
+              .gmap_canvas iframe {
+                position: relative;
+                z-index: 2;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+      <div class="contact__bottom">
+        <div class="contact__bottom__left">
+          <section class="contact-form">
+            <form id="form">
+              <p>Name*</p>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Full name"
+                class="form-1"
+              /><br />
+              <p>Email*</p>
+              <input
+                type="text"
+                id="emailaddress"
+                placeholder="Email addess"
+                class="form-2"
+              /><br />
+              <p>Subject*</p>
+              <input
+                type="text"
+                id="phonenumber"
+                placeholder="Phone number"
+                class="form-3"
+              /><br />
+              <p>Message*</p>
+              <input
+                type="text"
+                id="message"
+                placeholder="Message"
+                class="form-4"
+              /><br />
+              <input
+                type="button"
+                onclick="displayResult()"
+                value="Submit"
+                class="btn-submit"
+              />
+            </form>
+          </section>
+        </div>
+        <div class="contact__bottom__right">
+          <h3>Contact Info</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
