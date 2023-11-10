@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Log In</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <div class="login-container">
       <div class="login-content">
         <div class="login-column">
@@ -43,12 +45,20 @@
             </div>
             <div class="login-inputs">
               <div class="login-label">Email</div>
-              <div class="login-input">Input your email</div>
+              <input
+                type="email"
+                id="email"
+                class="login-input"
+                placeholder="Input your email"
+              />
               <div class="login-label">Password</div>
-              <div class="login-input">Input your password</div>
-            </div>
-            <div class="login-buttons">
-              <div class="login-button">Login</div>
+              <input
+                type="password"
+                id="password"
+                class="login-input"
+                placeholder="Input your password"
+              />
+              <button class="login-button" onclick="login()">Login</button>
               <div class="login-divider"></div>
               <div class="login-social">
                 <img
@@ -59,6 +69,7 @@
                 <div class="login-social-text">Login with Google</div>
               </div>
             </div>
+
             <div class="login-signup">
               <span style="color: rgba(158, 158, 158, 1)"
                 >Don't have an account?</span

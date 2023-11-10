@@ -17,6 +17,7 @@
     <title>Contact</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <div class="container_css">
       <div class="navigation">
         <div class="navigation__left">
@@ -95,13 +96,17 @@
                 id="fullname"
                 placeholder="Full name"
                 class="form-1"
+                required
+                pattern=".{5,}"
+                title="Name must be at least 5 characters"
               /><br />
               <p>Email*</p>
               <input
-                type="text"
+                type="email"
                 id="emailaddress"
-                placeholder="Email addess"
+                placeholder="Email address"
                 class="form-2"
+                required
               /><br />
               <p>Subject*</p>
               <input
@@ -116,18 +121,55 @@
                 id="message"
                 placeholder="Message"
                 class="form-4"
+                required
+                pattern=".{5,}"
+                title="Message must be at least 5 characters"
               /><br />
-              <input
-                type="button"
-                onclick="displayResult()"
-                value="Submit"
-                class="btn-submit"
-              />
+              <button type="submit" class="btn-submit">Submit</button>
             </form>
           </section>
         </div>
         <div class="contact__bottom__right">
           <h3>Contact Info</h3>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__up">
+          <div class="footer__up1">
+            <li style="padding-bottom: 10px">Our Contact</li>
+            <li>brandname</li>
+            <li>PCP tower</li>
+            <li style="padding-bottom: 10px">Pin-21542 Indonesia ID</li>
+            <li>(123) 456-789-1255-12548</li>
+            <li>email@domainnama.com</li>
+          </div>
+          <div class="footer__up2">
+            <li style="padding-bottom: 10px">Quick Links</li>
+            <li>Latest Events</li>
+            <li>Terms and conditions</li>
+            <li>Privacy policy</li>
+            <li>Carrer</li>
+            <li>Contac me</li>
+          </div>
+          <div class="footer__up3">
+            <li style="padding-bottom: 10px">Latest posts</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+          </div>
+          <div class="footer__up4">
+            <li style="padding-bottom: 10px">Recent news</li>
+            <li>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+          </div>
+        </div>
+        <div class="footer__down">
+          <p>@brandname Site All right reserved. Template by example</p>
+          <div>
+            <i class="bi bi-facebook text-white" style="padding-right: 9px"></i
+            ><i class="bi bi-twitter text-white" style="padding-right: 9px"></i
+            ><i class="bi bi-linkedin text-white" style="padding-right: 9px"></i
+            ><i class="bi bi-pinterest text-white"></i>
+          </div>
         </div>
       </div>
     </div>
