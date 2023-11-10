@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tracker</title>
+  </head>
+  <body>
+    <div class="container_css" style="background-color: #f7f7f7">
+      <div class="tracker__card">
+        <a href="home.html">HOME</a>
+        <h2 style="padding-top: 20px">Expense Tracker</h2>
+        <div
+          class="tracker__details"
+          style="
+            background-color: white;
+            border-radius: 30px;
+            width: 400px;
+            height: 600px;
+          "
+        >
+          <div id="balance" style="padding-left: 20px; padding-top: 20px">
+            <p>YOUR BALANCE</p>
+            <h3>Rp <span id="balanceAmount">0</span></h3>
+          </div>
+
+          <div id="history" style="padding-left: 20px">
+            <h4>History</h4>
+            <ul id="transactionList"></ul>
+          </div>
+
+          <div id="expenseForm" style="padding-left: 20px">
+            <h4>New transaction</h4>
+            <input
+              type="text"
+              id="title"
+              placeholder="Enter Details..."
+              style="width: 340px"
+            />
+            <h4>Amount (negative - expense, positive - income)</h4>
+            <input
+              type="number"
+              id="amount"
+              placeholder="Enter Amount..."
+              style="width: 340px"
+            />
+            <button
+              onclick="addTransaction()"
+              type="button"
+              class="btn btn-dark"
+              style="width: 340px"
+            >
+              Add transaction
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const balanceAmount = document.getElementById("balanceAmount");
+      const titleInput = document.getElementById("title");
+      const amountInput = document.getElementById("amount");
+      const transactionList = document.getElementById("transactionList");
+
+      let balance = 0;
+      const transactions = [];
+
+      function addTransaction() {
+        const title = titleInput.value;
+        const amount = parseFloat(amountInput.value);
+
+        if (title.trim() === "" || isNaN(amount)) {
+          alert("Harap isi judul dan masukkan jumlah yang valid.");
+          return;
+        }
+
+        transactions.push({ title, amount });
+        updateHistory();
+        updateBalance();
+        titleInput.value = "";
+        amountInput.value = "";
+      }
+
+      function updateHistory() {
+        transactionList.innerHTML = "";
+        for (const transaction of transactions) {
+          const li = document.createElement("li");
+          li.textContent = `${transaction.title}: ${transaction.amount}`;
+          transactionList.appendChild(li);
+        }
+      }
+
+      function updateBalance() {
+        balance = transactions.reduce(
+          (acc, transaction) => acc + transaction.amount,
+          0
+        );
+        balanceAmount.textContent = balance;
+      }
+    </script>
+  </body>
+</html>
