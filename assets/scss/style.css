@@ -1,1 +1,65 @@
-/*# sourceMappingURL=style.css.map */
+.row {
+  /* Center website */
+  /* Add padding BETWEEN each column (if you want) */
+  /* Create three equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* The "show" class is added to the filtered elements */
+  /* Style the buttons */
+  /* Add a grey background color on mouse-over */
+  /* Add a dark background color to the active button */
+}
+.row * {
+  box-sizing: border-box;
+}
+.row body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+.row .main {
+  max-width: 1140px;
+  margin: auto;
+}
+.row h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+.row .row {
+  margin: 8px -16px;
+}
+.row .row,
+.row .row > .column {
+  padding: 8px;
+}
+.row .column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+.row .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .content {
+  background-color: white;
+  padding: 10px;
+}
+.row .show {
+  display: block;
+}
+.row .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.row .btn:hover {
+  background-color: #ddd;
+}
+.row .btn.active {
+  background-color: #666;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="container_css">
+      <div class="navigation">
+        <div class="navigation__left">
+          <img src="assets/img/brandname.png" alt="" height="50px" />
+        </div>
+        <div class="navigation__right">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tracker.html">TRACKER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-us__title"><h2 class="text-white">Portfolio</h2></div>
+      <div style="width: 1140px">
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            All
+          </button>
+          <button class="btn" onclick="filterSelection('nature')">
+            Web design
+          </button>
+          <button class="btn" onclick="filterSelection('cars')">
+            Mobile App
+          </button>
+          <button class="btn" onclick="filterSelection('people')">
+            UI design
+          </button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img
+                src="assets/img/service1.jpg"
+                alt="Mountains"
+                style="width: 100%"
+              />
+              <h4>Mountains</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+
+          <div class="column cars">
+            <div class="content">
+              <img
+                src="assets/img/service2.jpg"
+                alt="Car"
+                style="width: 100%"
+              />
+              <h4>Retro</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+
+          <div class="column people">
+            <div class="content">
+              <img
+                src="assets/img/service3.jpg"
+                alt="People"
+                style="width: 100%"
+              />
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- END GRID -->
+      </div>
+    </div>
+  </body>
+</html>
